@@ -1,0 +1,14 @@
+{
+  "name": "etkilit-mobil-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ETKilit Mobil web sürümü (iPhone için Ana Ekrana eklenen uygulama)",
+  "type": "module",
+  "scripts": {
+    "test": "node crypto.test.mjs",
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "jsqr": "1.4.0"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+  <meta name="referrer" content="no-referrer" />
+  <title>ETKilit Mobil</title>
+  <meta name="description" content="Akıllı tahtanın kilidini telefonunuzla açın" />
+  <meta name="theme-color" content="#1d4ed8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="ETKilit" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="bar">
+    <button id="back" class="bar-btn" hidden>‹ Geri</button>
+    <div class="bar-mid"><img src="icons/icon-192.png" alt="" class="bar-logo" id="barLogo" /><span id="title">ETKilit Mobil</span></div>
+    <button id="toSettings" class="bar-btn right">Ayarlar</button>
+  </header>
+
+  <div id="notice" class="notice" hidden></div>
+  <div id="installHint" class="install" hidden></div>
+
+  <main id="app"></main>
+
+  <noscript><p class="card">Bu uygulama için JavaScript gereklidir.</p></noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
